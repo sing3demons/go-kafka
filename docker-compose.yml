@@ -21,15 +21,15 @@ services:
     depends_on:
       - zookeeper
 
-  mysql:
-    image: mariadb
-    container_name: mysql
-    environment:       
-      - MARIADB_ROOT_PASSWORD=P@ssw0rd
-      - MARIADB_DATABASE=micro
-      - MARIADB_USER=sing
-      - MARIADB_PASSWORD=P@ssw0rd
-    ports: 
-      - 3306:3306
-    volumes: 
-      - ./mysql:/var/lib/mysql
+  # mysql:
+  #   image: mariadb
+  #   container_name: mysql
+  #   environment:       
+  #     - MARIADB_ROOT_PASSWORD=P@ssw0rd
+  #     - MARIADB_DATABASE=micro
+  #     - MARIADB_USER=sing
+  #     - MARIADB_PASSWORD=P@ssw0rd
+  #   ports: 
+  #     - 3306:3306
+  #   volumes: 
+  #     - ./mysql:/var/lib/mysql
